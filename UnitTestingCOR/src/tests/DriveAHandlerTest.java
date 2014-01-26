@@ -20,6 +20,7 @@ public class DriveAHandlerTest {
 	@Test
 	public void test() {
 		Handler classUnderTest = new DriveAHandler("Fail");
+
 		Request request = new Request("Drive A","Format");
 
 		Boolean actualOutput = classUnderTest.handleRequest(request);

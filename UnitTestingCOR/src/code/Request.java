@@ -9,30 +9,18 @@ package code;
  */
 public class Request {
 	
-	/**
-	 * @set the resource
-	 */
 	public String getAnswer() {
 		return answer;
 	}
 
-	/**
-	 * @return the answer
-	 */
 	public void setAnswer(String answer) {
 		this.answer = answer;
 	}
 
-	/**
-	 * @return the resource
-	 */
 	public String getResource() {
 		return resource;
 	}
 
-	/**
-	 * @return the command
-	 */
 	public String getCommand() {
 		return command;
 	}
@@ -45,6 +33,4 @@ public class Request {
 		this.resource = requestResource;
 		this.command = requestCommand;
 	}
-
-
 }
