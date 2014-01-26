@@ -7,18 +7,23 @@ package code;
  * @author Oded
  *
  */
-public class OHandler extends Handler {
+public class DriveAHandler extends Handler {
+
+	private String status;
+
+	public DriveAHandler(String status) {
+		this.status = status;
+	}
 
 	/* (non-Javadoc)
 	 * @see code.Handler#handleRequest(code.Request)
 	 */
 	@Override
 	public Boolean handleRequest(Request request) {
-		String resource = "Oded";
+		String resource = "Drive A";
 
 		if (resource.equals(request.getResource())){
-			String command = request.getCommand();
-			System.out.println(resource + " " + command + " " );
+			request.setAnswer(status);
 			return true;
 		} else {
 			if(handler != null){
